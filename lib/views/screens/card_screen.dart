@@ -12,7 +12,7 @@ class CartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.amber,
         centerTitle: true,
         title: const Text(
           "Cards",
@@ -117,13 +117,14 @@ class CartScreen extends StatelessWidget {
                   Text(
                     "\$${cartController.cart.totalPrice}",
                     style: const TextStyle(
+                      color: Colors.white,
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.deepPurple,
+                      backgroundColor: Colors.white,
                     ),
                     onPressed: cartController.cart.totalPrice == 0
                         ? null
